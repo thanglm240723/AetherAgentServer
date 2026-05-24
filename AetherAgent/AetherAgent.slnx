@@ -1,0 +1,11 @@
+<Solution>
+  <Project Path="AetherAgent.Application/AetherAgent.Application.csproj" Id="9255030f-18e6-494d-96fc-5fa0c889e8aa" />
+  <Project Path="AetherAgent.Domain/AetherAgent.Domain.csproj" Id="83c20d73-3aea-4f38-bac9-c547e4baae14" />
+  <Project Path="AetherAgent.Infrastructure/AetherAgent.Infrastructure.csproj" Id="9c14635b-7d9f-41ba-b741-fa82455b03c6" />
+  <Project Path="AetherAgent/AetherAgent.API.csproj" />
+  <Folder Name="/tests/">
+    <Project Path="tests/AetherAgent.Domain.Tests/AetherAgent.Domain.Tests.csproj" />
+    <Project Path="tests/AetherAgent.Application.Tests/AetherAgent.Application.Tests.csproj" />
+    <Project Path="tests/AetherAgent.API.Tests/AetherAgent.API.Tests.csproj" />
+  </Folder>
+</Solution>

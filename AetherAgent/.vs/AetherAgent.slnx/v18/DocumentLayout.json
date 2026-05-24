@@ -1,0 +1,155 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Code\\BE\\AetherAgent\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9255030F-18E6-494D-96FC-5FA0C889E8AA}|AetherAgent.Application\\AetherAgent.Application.csproj|d:\\code\\be\\aetheragent\\aetheragent.application\\interfaces\\irefreshtokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9255030F-18E6-494D-96FC-5FA0C889E8AA}|AetherAgent.Application\\AetherAgent.Application.csproj|solutionrelative:aetheragent.application\\interfaces\\irefreshtokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9255030F-18E6-494D-96FC-5FA0C889E8AA}|AetherAgent.Application\\AetherAgent.Application.csproj|d:\\code\\be\\aetheragent\\aetheragent.application\\aetheragent.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9255030F-18E6-494D-96FC-5FA0C889E8AA}|AetherAgent.Application\\AetherAgent.Application.csproj|solutionrelative:aetheragent.application\\aetheragent.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94F70E03-3F7A-F7D5-D43D-3A6E9D203077}|tests\\AetherAgent.Application.Tests\\AetherAgent.Application.Tests.csproj|d:\\code\\be\\aetheragent\\tests\\aetheragent.application.tests\\aetheragent.application.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{94F70E03-3F7A-F7D5-D43D-3A6E9D203077}|tests\\AetherAgent.Application.Tests\\AetherAgent.Application.Tests.csproj|solutionrelative:tests\\aetheragent.application.tests\\aetheragent.application.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFFA19EF-7797-6042-C62E-FADD141B6E92}|AetherAgent\\AetherAgent.API.csproj|d:\\code\\be\\aetheragent\\aetheragent\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EFFA19EF-7797-6042-C62E-FADD141B6E92}|AetherAgent\\AetherAgent.API.csproj|solutionrelative:aetheragent\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C14635B-7D9F-41BA-B741-FA82455B03C6}|AetherAgent.Infrastructure\\AetherAgent.Infrastructure.csproj|d:\\code\\be\\aetheragent\\aetheragent.infrastructure\\aetheragent.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9C14635B-7D9F-41BA-B741-FA82455B03C6}|AetherAgent.Infrastructure\\AetherAgent.Infrastructure.csproj|solutionrelative:aetheragent.infrastructure\\aetheragent.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFFA19EF-7797-6042-C62E-FADD141B6E92}|AetherAgent\\AetherAgent.API.csproj|d:\\code\\be\\aetheragent\\aetheragent\\aetheragent.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EFFA19EF-7797-6042-C62E-FADD141B6E92}|AetherAgent\\AetherAgent.API.csproj|solutionrelative:aetheragent\\aetheragent.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFFA19EF-7797-6042-C62E-FADD141B6E92}|AetherAgent\\AetherAgent.API.csproj|d:\\code\\be\\aetheragent\\aetheragent\\aetheragent.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{EFFA19EF-7797-6042-C62E-FADD141B6E92}|AetherAgent\\AetherAgent.API.csproj|solutionrelative:aetheragent\\aetheragent.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EFFA19EF-7797-6042-C62E-FADD141B6E92}|AetherAgent\\AetherAgent.API.csproj|d:\\code\\be\\aetheragent\\aetheragent\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EFFA19EF-7797-6042-C62E-FADD141B6E92}|AetherAgent\\AetherAgent.API.csproj|solutionrelative:aetheragent\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IRefreshTokenRepository.cs",
+              "DocumentMoniker": "D:\\Code\\BE\\AetherAgent\\AetherAgent.Application\\Interfaces\\IRefreshTokenRepository.cs",
+              "RelativeDocumentMoniker": "AetherAgent.Application\\Interfaces\\IRefreshTokenRepository.cs",
+              "ToolTip": "D:\\Code\\BE\\AetherAgent\\AetherAgent.Application\\Interfaces\\IRefreshTokenRepository.cs",
+              "RelativeToolTip": "AetherAgent.Application\\Interfaces\\IRefreshTokenRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-23T16:27:42.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AetherAgent.Application",
+              "DocumentMoniker": "D:\\Code\\BE\\AetherAgent\\AetherAgent.Application\\AetherAgent.Application.csproj",
+              "RelativeDocumentMoniker": "AetherAgent.Application\\AetherAgent.Application.csproj",
+              "ToolTip": "D:\\Code\\BE\\AetherAgent\\AetherAgent.Application\\AetherAgent.Application.csproj",
+              "RelativeToolTip": "AetherAgent.Application\\AetherAgent.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-23T16:27:07.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AetherAgent.Application.Tests",
+              "DocumentMoniker": "D:\\Code\\BE\\AetherAgent\\tests\\AetherAgent.Application.Tests\\AetherAgent.Application.Tests.csproj",
+              "RelativeDocumentMoniker": "tests\\AetherAgent.Application.Tests\\AetherAgent.Application.Tests.csproj",
+              "ToolTip": "D:\\Code\\BE\\AetherAgent\\tests\\AetherAgent.Application.Tests\\AetherAgent.Application.Tests.csproj",
+              "RelativeToolTip": "tests\\AetherAgent.Application.Tests\\AetherAgent.Application.Tests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-23T16:24:24.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AetherAgent.Infrastructure.csproj",
+              "DocumentMoniker": "D:\\Code\\BE\\AetherAgent\\AetherAgent.Infrastructure\\AetherAgent.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "AetherAgent.Infrastructure\\AetherAgent.Infrastructure.csproj",
+              "ToolTip": "D:\\Code\\BE\\AetherAgent\\AetherAgent.Infrastructure\\AetherAgent.Infrastructure.csproj",
+              "RelativeToolTip": "AetherAgent.Infrastructure\\AetherAgent.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-23T14:40:51.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AetherAgent.API.csproj",
+              "DocumentMoniker": "D:\\Code\\BE\\AetherAgent\\AetherAgent\\AetherAgent.API.csproj",
+              "RelativeDocumentMoniker": "AetherAgent\\AetherAgent.API.csproj",
+              "ToolTip": "D:\\Code\\BE\\AetherAgent\\AetherAgent\\AetherAgent.API.csproj",
+              "RelativeToolTip": "AetherAgent\\AetherAgent.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-23T09:28:33.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AetherAgent.API",
+              "DocumentMoniker": "D:\\Code\\BE\\AetherAgent\\AetherAgent\\AetherAgent.API.csproj",
+              "RelativeDocumentMoniker": "AetherAgent\\AetherAgent.API.csproj",
+              "ToolTip": "D:\\Code\\BE\\AetherAgent\\AetherAgent\\AetherAgent.API.csproj",
+              "RelativeToolTip": "AetherAgent\\AetherAgent.API.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-23T09:28:30.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Code\\BE\\AetherAgent\\AetherAgent\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "AetherAgent\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Code\\BE\\AetherAgent\\AetherAgent\\Properties\\launchSettings.json",
+              "RelativeToolTip": "AetherAgent\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-23T09:28:00.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Code\\BE\\AetherAgent\\AetherAgent\\appsettings.json",
+              "RelativeDocumentMoniker": "AetherAgent\\appsettings.json",
+              "ToolTip": "D:\\Code\\BE\\AetherAgent\\AetherAgent\\appsettings.json",
+              "RelativeToolTip": "AetherAgent\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-23T09:27:47.275Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

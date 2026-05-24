@@ -1,0 +1,6 @@
+@AetherAgent_HostAddress = http://localhost:5244
+
+GET {{AetherAgent_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
