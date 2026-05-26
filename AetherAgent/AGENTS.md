@@ -1,4 +1,4 @@
-markdown# AGENTS.md — AetherAgent
+# AGENTS.md — AetherAgent
 
 # Version: 1.0.0 | Updated: 2026-05
 
@@ -31,52 +31,46 @@ Observability: OpenTelemetry SDK 1.8.x — PLANNED, not yet installed
 Resilience: Polly v8 — PLANNED (Sprint 2), not yet installed
 Scheduling: Hangfire 1.8.x — PLANNED (Sprint 2), not yet installed
 
-## 3. SOLUTION STRUCTURE
+## 3. SOLUTION STRUCTURE (trạng thái thực tế)
 
-AetherAgent.slnx                      # solution file at repo root (.slnx, not .sln)
-├── AetherAgent/                      # API project — assembly: AetherAgent.API
-│   ├── AetherAgent.API.csproj        # refs Application + Infrastructure
-│   ├── Program.cs
+AetherAgent.slnx                         # solution file (.slnx format)
+├── AetherAgent/                          # API project — assembly: AetherAgent.API
 │   ├── Controllers/
-│   │   └── Webhooks/                 # 5 platform webhook stubs (Zalo, FB, TikTok, IG, YT)
-│   ├── Hubs/                         # SignalR hubs
-│   ├── Middleware/                   # TraceId, error handling
-│   ├── Extensions/                   # DI / service registration
-│   ├── Properties/
-│   ├── appsettings.json
-│   ├── appsettings.Development.json
-│   └── AetherAgent.http
-├── AetherAgent.Application/          # refs Domain only
-│   ├── DTOs/
-│   │   └── Auth/                     # LoginRequest, TokenResponse, RefreshTokenRequest, RevokeTokenRequest
-│   ├── Interfaces/                   # ITokenService, IPasswordHasher, IAppUserRepository, IRefreshTokenRepository, IUnitOfWork
-│   ├── Services/
-│   ├── UseCases/
-│   │   └── Auth/                     # LoginUseCase, RefreshTokenUseCase, RevokeTokenUseCase
-│   └── Validators/                   # FluentValidation rules (LoginRequestValidator)
-├── AetherAgent.Domain/               # zero external deps — entities sẽ tự tạo
-│   ├── Common/                       # (sẽ chứa BaseEntity, IDomainEvent)
-│   ├── Entities/                     # (sẽ chứa AppUser, RefreshToken)
-│   ├── Enums/                        # (sẽ chứa UserRole)
-│   ├── Events/                       # (sẽ chứa UserLoggedInEvent, RefreshTokenRevokedEvent)
-│   └── Interfaces/
-├── AetherAgent.Infrastructure/       # refs Application (implements Domain/App interfaces)
-│   ├── Auth/                         # JwtTokenService, BcryptPasswordHasher, JwtOptions
-│   ├── Persistence/
-│   │   ├── AetherDbContext.cs        # global soft-delete filter (excl. RefreshToken)
-│   │   ├── Configurations/           # AppUserConfiguration, RefreshTokenConfiguration
-│   │   └── Repositories/             # AppUserRepository, RefreshTokenRepository
-│   ├── Messaging/                    # RabbitMQ publisher/consumer (Sprint 2)
-│   ├── BackgroundJobs/               # Hangfire jobs (Sprint 2)
-│   ├── SignalR/                      # hub services / backplane wiring
-│   └── Observability/                # Serilog + OTel wiring
-├── tests/                            # xUnit + FluentAssertions + Moq
-│   ├── AetherAgent.Domain.Tests/
-│   ├── AetherAgent.Application.Tests/   # LoginRequestValidatorTests, LoginUseCaseTests (skipped)
-│   └── AetherAgent.API.Tests/           # WebApplicationFactory<Program> integration
-├── AGENTS.md
-├── CLAUDE.md
-└── CONSTITUTION.md
+│   │   ├── Auth/AuthController.cs        # stub — throw NotImplementedException
+│   │   └── Webhooks/                     # FacebookWebhookPayload, ZaloWebhookPayload, YouTubeWebhookPayload
+│   ├── Hubs/SaleAssistHub.cs + ISaleAssistHub.cs
+│   ├── Middleware/ErrorHandlingMiddleware.cs, TraceIdMiddleware.cs
+│   └── Extensions/AuthExtensions.cs     # DI wiring JWT + Use Cases (đã có)
+│
+├── AetherAgent.Application/
+│   ├── DTOs/Auth/                        # LoginRequest, TokenResponse, RefreshTokenRequest, RevokeTokenRequest
+│   ├── Interfaces/                       # ITokenService, IPasswordHasher, IAppUserRepository,
+│   │                                     # IRefreshTokenRepository (rỗng), IUnitOfWork, IHmacValidator
+│   ├── UseCases/Auth/                    # LoginUseCase, RefreshTokenUseCase, RevokeTokenUseCase — stubs
+│   └── Validators/LoginRequestValidator.cs
+│
+├── AetherAgent.Domain/                   # ⚠️ RỖNG — chưa có file .cs nào
+│   ├── Common/                           # Chưa tạo: BaseEntity, IDomainEvent
+│   ├── Entities/                         # Chưa tạo: AppUser, RefreshToken
+│   ├── Enums/                            # Chưa tạo: UserRole
+│   └── Events/                           # Chưa tạo: UserLoggedInEvent, RefreshTokenRevokedEvent
+│
+├── AetherAgent.Infrastructure/
+│   ├── Auth/JwtOptions.cs, JwtTokenService.cs (stub), BcryptPasswordHasher.cs (stub)
+│   ├── Security/HmacValidator.cs         # ✅ đã implement (SEC-02)
+│   └── Persistence/AetherDbContext.cs, Configurations/ (stubs), Repositories/ (stubs)
+│
+├── YARP_APIGateway/                      # ✅ API Gateway thực tế — YARP + full middleware
+│   └── Middleware/                       # ErrorHandling, TraceId, RequestLogging, Authentication, RateLimiting
+│
+├── AetherAgent.Gateway/                  # ⚠️ Placeholder rỗng — chỉ có Console.WriteLine. Xem ADR-007.
+│
+├── tests/
+│   ├── AetherAgent.Domain.Tests/         # PlaceholderTests (skip)
+│   ├── AetherAgent.Application.Tests/    # LoginRequestValidatorTests ✅, LoginUseCaseTests (skip)
+│   └── AetherAgent.API.Tests/            # AuthControllerTests (skip)
+│
+├── AGENTS.md, CLAUDE.md, CONSTITUTION.md
 
 
 ## 4. LAYER RULES (hard boundary — never cross)
@@ -139,12 +133,14 @@ Sprint: 1 — Foundation
 Done:
   - EF Core + SQL Server (DbContext skeleton — needs entities)
   - Serilog wired in Infrastructure + API
-  - SignalR hub folder + webhook controller folder (5 platforms, stubs pending)
+  - SignalR hub (SaleAssistHub) + webhook controllers (Facebook, Zalo, YouTube payloads)
   - JWT auth scaffolding (DTOs, interfaces, use cases, JwtTokenService stub, AuthController stub, AuthExtensions DI)
   - Test projects: Domain.Tests, Application.Tests (LoginRequestValidator có test), API.Tests
+  - IHmacValidator (Application/Interfaces) + HmacValidator.cs (Infrastructure/Security) ✅
 Pending (Sprint 1 close):
-  - User tạo Domain entities: AppUser, RefreshToken, BaseEntity, IDomainEvent, UserRole, 2 domain events
-  - Implement bodies cho JwtTokenService, BcryptPasswordHasher, repositories, use cases, controller
+  - ⚠️ Domain entities chưa tồn tại → solution KHÔNG compile hiện tại
+    (AppUser, RefreshToken, BaseEntity, IDomainEvent, UserRole, 2 domain events)
+  - Implement bodies: JwtTokenService, BcryptPasswordHasher, Repositories, Use Cases, AuthController
   - Wire AddDbContext + AddAetherAuth + UseAuthentication trong Program.cs
-  - HMAC-SHA256 webhook validation (SEC-02 violation — fix before Sprint 2)
+  - IRefreshTokenRepository còn rỗng — cần bổ sung method signatures
 Blocked: OpenTelemetry, RabbitMQ producers, Polly, Hangfire → Sprint 2

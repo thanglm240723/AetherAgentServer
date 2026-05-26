@@ -81,7 +81,9 @@ Testing:     xUnit + FluentAssertions + Moq                                     
 - CancellationToken propagate xuyên suốt call chain
 - XML doc comment cho mọi public API
 
-## TESTING REQUIREMENTS  [TARGET — test projects chưa tồn tại, sẽ tạo cùng feature đầu tiên có logic nghiệp vụ]
+## TESTING REQUIREMENTS
+# 3 test projects đã tồn tại trong /tests/ (Domain.Tests, Application.Tests, API.Tests).
+# Phần lớn test đang [Fact(Skip=...)] do pending implementation. Unskip khi implement xong.
 - Unit test coverage ≥ 80% cho Application layer
 - Integration test cho mọi API endpoint (happy + error path)
 - Không mock DbContext — dùng SQL Server LocalDB
@@ -119,3 +121,4 @@ Cấm không có human confirm:
 - Chạy Constitution Self-Check trước khi submit code
 - Update plan.md sau mỗi completed step
 - Báo cáo khi gặp edge case không có trong spec
+- Append lessons/decisions quan trọng vào section AUTO MEMORY của CLAUDE.md sau mỗi session

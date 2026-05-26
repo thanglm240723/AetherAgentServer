@@ -58,6 +58,10 @@ Strong success criteria → independent looping. Weak criteria ("make it work") 
 
 # ADR-006: Windows Auth for local SQL Server 2022 — no password in connection string for dev
 
+# ADR-007: YARP_APIGateway/ là gateway duy nhất đang dùng (có full middleware).
+# AetherAgent.Gateway/ là project placeholder rỗng — không có logic.
+# Không viết code vào AetherAgent.Gateway/ cho đến khi có quyết định chính thức (RFC cần thiết).
+
 ### Lessons Learned
 
 # LESSON-001: EF Core global query filter for soft delete must be in OnModelCreating, not OnConfiguring
@@ -68,15 +72,18 @@ Strong success criteria → independent looping. Weak criteria ("make it work") 
 
 ### Current Sprint Notes
 
-# Sprint 1 focus: Base infrastructure — EF Core, Serilog, SignalR hub, webhook stubs, JWT auth scaffold, test projects
+# Sprint 1 focus: Base infrastructure + Auth module
 
-# Done (scaffold): JWT auth stack (DTOs/Interfaces/UseCases skeleton + JwtTokenService stub + AuthController + AuthExtensions DI + appsettings Jwt section) + 3 test projects (xUnit/FluentAssertions/Moq) + Program.cs partial cho WebApplicationFactory
+# ⚠️ TRẠNG THÁI: Solution hiện KHÔNG compile — Domain project rỗng, nhưng DbContext và
+#    nhiều file Infrastructure/Application đã reference AppUser, RefreshToken, BaseEntity.
+#    Đây là trạng thái có chủ ý từ scaffold. Ưu tiên cao nhất: tạo Domain entities.
 
-# Blocked: OpenTelemetry, RabbitMQ producers, Polly, Hangfire — Sprint 2
+# Done (scaffold): EF Core + Serilog + SignalR + JWT auth stack + HmacValidator (SEC-02) +
+#    3 test projects (xUnit/FluentAssertions/Moq)
 
-# Awaiting user: tạo Domain entities (AppUser, RefreshToken, BaseEntity, IDomainEvent, UserRole, 2 events). Cho đến khi xong, solution KHÔNG compile được — đây là dự kiến.
+# Pending: Domain entities → implement stubs → wire Program.cs → EF migration → unskip tests
 
-# Next: (1) user tạo entities → (2) implement body cho JwtTokenService/PasswordHasher/Repositories/UseCases → (3) wire DbContext + AddAetherAuth() trong Program.cs → (4) HMAC-SHA256 webhook validation (SEC-02)
+# Blocked (Sprint 2): OpenTelemetry, RabbitMQ producers, Polly, Hangfire
 
 ## PATTERNS TO FOLLOW
 
