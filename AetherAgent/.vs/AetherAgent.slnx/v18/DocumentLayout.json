@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Code\\BE\\AetherAgent\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9255030F-18E6-494D-96FC-5FA0C889E8AA}|AetherAgent.Application\\AetherAgent.Application.csproj|d:\\code\\be\\aetheragent\\aetheragent.application\\interfaces\\irefreshtokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9255030F-18E6-494D-96FC-5FA0C889E8AA}|AetherAgent.Application\\AetherAgent.Application.csproj|solutionrelative:aetheragent.application\\interfaces\\irefreshtokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB12546A-6FD0-439D-95D4-D925DB09F8DA}|YARP_APIGateway\\YARP_APIGateway.csproj|d:\\code\\be\\aetheragent\\yarp_apigateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB12546A-6FD0-439D-95D4-D925DB09F8DA}|YARP_APIGateway\\YARP_APIGateway.csproj|solutionrelative:yarp_apigateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9255030F-18E6-494D-96FC-5FA0C889E8AA}|AetherAgent.Application\\AetherAgent.Application.csproj|d:\\code\\be\\aetheragent\\aetheragent.application\\aetheragent.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{9255030F-18E6-494D-96FC-5FA0C889E8AA}|AetherAgent.Application\\AetherAgent.Application.csproj|solutionrelative:aetheragent.application\\aetheragent.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{AB12546A-6FD0-439D-95D4-D925DB09F8DA}|YARP_APIGateway\\YARP_APIGateway.csproj|d:\\code\\be\\aetheragent\\yarp_apigateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AB12546A-6FD0-439D-95D4-D925DB09F8DA}|YARP_APIGateway\\YARP_APIGateway.csproj|solutionrelative:yarp_apigateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94F70E03-3F7A-F7D5-D43D-3A6E9D203077}|tests\\AetherAgent.Application.Tests\\AetherAgent.Application.Tests.csproj|d:\\code\\be\\aetheragent\\tests\\aetheragent.application.tests\\aetheragent.application.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -42,46 +42,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IRefreshTokenRepository.cs",
-              "DocumentMoniker": "D:\\Code\\BE\\AetherAgent\\AetherAgent.Application\\Interfaces\\IRefreshTokenRepository.cs",
-              "RelativeDocumentMoniker": "AetherAgent.Application\\Interfaces\\IRefreshTokenRepository.cs",
-              "ToolTip": "D:\\Code\\BE\\AetherAgent\\AetherAgent.Application\\Interfaces\\IRefreshTokenRepository.cs",
-              "RelativeToolTip": "AetherAgent.Application\\Interfaces\\IRefreshTokenRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T16:27:42.17Z",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Code\\BE\\AetherAgent\\YARP_APIGateway\\appsettings.json",
+              "RelativeDocumentMoniker": "YARP_APIGateway\\appsettings.json",
+              "ToolTip": "D:\\Code\\BE\\AetherAgent\\YARP_APIGateway\\appsettings.json",
+              "RelativeToolTip": "YARP_APIGateway\\appsettings.json",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAYwBEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-26T02:08:13.71Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AetherAgent.Application",
-              "DocumentMoniker": "D:\\Code\\BE\\AetherAgent\\AetherAgent.Application\\AetherAgent.Application.csproj",
-              "RelativeDocumentMoniker": "AetherAgent.Application\\AetherAgent.Application.csproj",
-              "ToolTip": "D:\\Code\\BE\\AetherAgent\\AetherAgent.Application\\AetherAgent.Application.csproj",
-              "RelativeToolTip": "AetherAgent.Application\\AetherAgent.Application.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-23T16:27:07.836Z",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Code\\BE\\AetherAgent\\YARP_APIGateway\\Program.cs",
+              "RelativeDocumentMoniker": "YARP_APIGateway\\Program.cs",
+              "ToolTip": "D:\\Code\\BE\\AetherAgent\\YARP_APIGateway\\Program.cs",
+              "RelativeToolTip": "YARP_APIGateway\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T01:55:31.957Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AetherAgent.Application.Tests",
+              "Title": "AetherAgent.Application.Tests.csproj",
               "DocumentMoniker": "D:\\Code\\BE\\AetherAgent\\tests\\AetherAgent.Application.Tests\\AetherAgent.Application.Tests.csproj",
               "RelativeDocumentMoniker": "tests\\AetherAgent.Application.Tests\\AetherAgent.Application.Tests.csproj",
               "ToolTip": "D:\\Code\\BE\\AetherAgent\\tests\\AetherAgent.Application.Tests\\AetherAgent.Application.Tests.csproj",
               "RelativeToolTip": "tests\\AetherAgent.Application.Tests\\AetherAgent.Application.Tests.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-23T16:24:24.87Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-23T16:24:24.87Z"
             },
             {
               "$type": "Document",
@@ -93,8 +92,7 @@
               "RelativeToolTip": "AetherAgent.Infrastructure\\AetherAgent.Infrastructure.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-23T14:40:51.423Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-23T14:40:51.423Z"
             },
             {
               "$type": "Document",
@@ -106,8 +104,7 @@
               "RelativeToolTip": "AetherAgent\\AetherAgent.API.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-23T09:28:33.055Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-23T09:28:33.055Z"
             },
             {
               "$type": "Document",
@@ -118,8 +115,7 @@
               "ToolTip": "D:\\Code\\BE\\AetherAgent\\AetherAgent\\AetherAgent.API.csproj",
               "RelativeToolTip": "AetherAgent\\AetherAgent.API.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-23T09:28:30.492Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-23T09:28:30.492Z"
             },
             {
               "$type": "Document",
@@ -131,8 +127,7 @@
               "RelativeToolTip": "AetherAgent\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-05-23T09:28:00.122Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-23T09:28:00.122Z"
             },
             {
               "$type": "Document",
@@ -144,8 +139,7 @@
               "RelativeToolTip": "AetherAgent\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-05-23T09:27:47.275Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-23T09:27:47.275Z"
             }
           ]
         }

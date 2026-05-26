@@ -4968,6 +4968,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "AetherAgent.Application >= 1.0.0",
+      "AetherAgent.Domain >= 1.0.0",
       "BCrypt.Net-Next >= 4.0.3",
       "Microsoft.EntityFrameworkCore >= 8.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.0",
@@ -5016,6 +5017,9 @@
           "projectReferences": {
             "D:\\Code\\BE\\AetherAgent\\AetherAgent.Application\\AetherAgent.Application.csproj": {
               "projectPath": "D:\\Code\\BE\\AetherAgent\\AetherAgent.Application\\AetherAgent.Application.csproj"
+            },
+            "D:\\Code\\BE\\AetherAgent\\AetherAgent.Domain\\AetherAgent.Domain.csproj": {
+              "projectPath": "D:\\Code\\BE\\AetherAgent\\AetherAgent.Domain\\AetherAgent.Domain.csproj"
             }
           }
         }

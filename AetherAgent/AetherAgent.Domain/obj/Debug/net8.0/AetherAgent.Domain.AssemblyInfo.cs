@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AetherAgent.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d0a6c520f8df3e71af00578a51944e502328c85")]
 [assembly: System.Reflection.AssemblyProductAttribute("AetherAgent.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AetherAgent.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

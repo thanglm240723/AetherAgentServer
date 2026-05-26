@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "AetherAgent\\AetherAgent.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "YARP_APIGateway\\YARP_APIGateway.csproj",
+        "Action": "StartWithoutDebugging"
+      }
+    ]
+  }
+]

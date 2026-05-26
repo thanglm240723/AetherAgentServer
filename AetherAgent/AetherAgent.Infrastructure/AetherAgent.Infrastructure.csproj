@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AetherAgent.Application\AetherAgent.Application.csproj" />
+    <ProjectReference Include="..\AetherAgent.Domain\AetherAgent.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>

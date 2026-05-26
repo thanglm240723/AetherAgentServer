@@ -191,6 +191,9 @@
             "projectReferences": {
               "D:\\Code\\BE\\AetherAgent\\AetherAgent.Application\\AetherAgent.Application.csproj": {
                 "projectPath": "D:\\Code\\BE\\AetherAgent\\AetherAgent.Application\\AetherAgent.Application.csproj"
+              },
+              "D:\\Code\\BE\\AetherAgent\\AetherAgent.Domain\\AetherAgent.Domain.csproj": {
+                "projectPath": "D:\\Code\\BE\\AetherAgent\\AetherAgent.Domain\\AetherAgent.Domain.csproj"
               }
             }
           }
